@@ -1,0 +1,11 @@
+Package: pkgutils
+Type: Package
+Title: R 包编译相关工具函数
+Version: 1.0
+Date: 2014-05-02
+Author: Huashan Chen
+Maintainer: Huashan Chen <chenhuashan@gmail.com>
+Depends: stringr
+Description: R 包编译相关工具函数
+License: 
+Encoding: UTF-8
