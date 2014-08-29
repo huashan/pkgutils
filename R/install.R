@@ -209,6 +209,7 @@ incrementBuildNumber<-function(pkg){
 	ver.main = head(ver, 1L)
 	ver.bvd = as.integer(tail(ver, 1L)) + 1	
 	desc$Version = paste(c(ver.main, ver.bvd), collapse = '-')	
+	if (!is.null(desc$Encoding)) desc = lapply(desc, function(x) {Encoding(x)=desc$Encoding; x})
 	roxygen2:::write.description(desc, file.path(pkg, 'DESCRIPTION'))
 }
 
